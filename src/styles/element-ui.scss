@@ -1,0 +1,32 @@
+// 自定义 element-ui 的默认样式
+// ...
+.el-button {
+  // color: inherit;
+}
+
+.el-menu--horizontal {
+  ul {
+    li {
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: 0px;
+      }
+      span {
+        color: #000;
+        &:hover {
+          color: #a23634;
+        }
+      }
+      &.el-menu-item.is-active {
+        background-color: #a23634;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.el-menu--collapse .el-menu .el-submenu, .el-menu--popup {
+  min-width: 150px;
+}
